@@ -6,7 +6,7 @@ function waitfrome(ms){
 }
 async function myFunction() {
         
-    for(let i=1;i<=2;i++){
+    for(let i=1;i<=1000;i++){
         if(document.getElementById("Red").clicked == true)
         {
             document.getElementById("Green").style.backgroundColor = "Green";
@@ -50,6 +50,9 @@ async function myFunction() {
             document.getElementById("Yellow").style.backgroundColor = "Yellow";
             await waitfrome(5000);
         }
-        
+        document.getElementById("Red").style.backgroundColor = "White";
+        document.getElementById("Green").style.backgroundColor = "White";
+        document.getElementById("Yellow").style.backgroundColor = "White";
+        await waitfrome(1000);
     }
   }
